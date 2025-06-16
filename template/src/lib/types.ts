@@ -13,7 +13,7 @@ export interface VoiceEntry {
   updated_at: string; // ISO timestamp
   emotion_score_score: number | null;
   embedding: number[] | null;
-
+  days_from_last_updated: number;
   // Optional / extended columns in the real DB
   emotion_score_log?: string | null;
   tags_log?: string | null;
@@ -29,3 +29,9 @@ export interface ProcessedResult {
   summary: string;
   tagFrequencies: Record<string, number>;
 } 
+
+export enum FILTER_DAYS {
+  ALL = "all",
+  LAST_7_DAYS = "7",
+  LAST_30_DAYS = "30",
+}
