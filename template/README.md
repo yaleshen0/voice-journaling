@@ -1,7 +1,3 @@
-# Sentari Interview Template
-
-Welcome candidate! This repository is a **self-contained sandbox**. It does _not_ connect to any Supabase instance or external API; everything you need is already here.
-
 ---
 
 ## 1 Project Setup
